@@ -3,6 +3,65 @@
     src: url(Norse-Bold.otf);
 }
 
-p {
-    font-family: odin-font;
+:root{
+    --button-color: #596D48;
+    --default-input-color: #E5E7EB;
+    --good-input-color:blue;
+    --bad-input-color:red;
+    --left-width:400px, 40vw, 40vw;
+    --right-width:600px, 60vw, 60vw;
+    --color-white: white;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    font-family: odin-font, sans-serif;
+    color: var(--color-white);
+    font-size: clamp(64px, 82px, 82px);
+    flex-flow: column;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.logo{
+
+    align-items: center;
+    background-color: rgba(0, 0 , 0, 0.6);
+    width : clamp(var(--left-width));
+    justify-content: center;
+}
+
+img{
+    height: 150px;
+}
+
+.left {
+    background-image: url('img/plants.jpg');
+    background-size: cover;
+    flex-flow: column;
+    width: clamp(var(--left-width));
+}
+
+.credit{
+    color: var(--color-white);
+    position: absolute;
+    bottom: 10px; left: clamp(50px, 15vw, 15vw);
+}
+
+a:visited {
+    color: var(--color-white);
+}
+
+.button{
+    background-color :var(--button-color);
 }
