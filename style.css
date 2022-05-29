@@ -31,7 +31,7 @@ body{
     font-size: clamp(64px, 82px, 82px);
     flex-flow: column;
     align-items: center;
-    padding-top: 20vh;
+    margin-top: 20vh;
 }
 
 .logo{
@@ -82,12 +82,11 @@ button{
     border-radius: 8px;
     border: none;
     box-shadow: 2px 5px 2px 0 rgba(0,0,0,0.1);
- 
 }
 
 .box{
     flex-direction: column;
-    padding:0 50px 25px 0;
+    margin:0 50px 25px 0;
 }
 
 .layer-one{
@@ -97,7 +96,7 @@ button{
 }
 
 .layer-two{
-    height: clamp(200px, 30vh, 30vh);
+    height: clamp(275px, 30vh, 30vh);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     min-width: 885px;
 }
@@ -141,13 +140,13 @@ input:focus{
 }
 
 .layer-one p{
-    padding-top: 150px;
+    margin-top: 15vh;
 }
 
 .layer-three div{
-    padding-top: 35px;
+    margin-top: 35px;
 }
 
 form, .layer-one p, .layer-three div{
-    padding-left: 50px;
+    margin-left: 50px;
 }
