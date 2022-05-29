@@ -11,6 +11,7 @@
     --left-width:400px, 40vw, 40vw;
     --right-width:600px, 60vw, 60vw;
     --color-white: white;
+    --color-darker-white: rgb(233, 233, 233);
 }
 
 .flex{
@@ -34,11 +35,11 @@ body{
 }
 
 .logo{
-
     align-items: center;
     background-color: rgba(0, 0 , 0, 0.6);
     width : clamp(var(--left-width));
     justify-content: center;
+    height: 175px;
 }
 
 img{
@@ -52,16 +53,101 @@ img{
     width: clamp(var(--left-width));
 }
 
+.right{
+    flex-flow: column;
+    width: clamp(var(--right-width));
+}
+
 .credit{
     color: var(--color-white);
     position: absolute;
     bottom: 10px; left: clamp(50px, 15vw, 15vw);
 }
 
-a:visited {
+.credit a:visited {
     color: var(--color-white);
 }
 
-.button{
+.mini-text a:visited, .mini-text a:link{
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+button{
     background-color :var(--button-color);
+    color: var(--color-white);
+    padding: 15px 50px 15px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 5px 2px 0 rgba(0,0,0,0.1);
+ 
+}
+
+.box{
+    flex-direction: column;
+    padding:0 50px 25px 0;
+}
+
+.layer-one{
+    height: clamp(200px, 40vh, 40vh);
+    background-color: var(--color-darker-white);
+    min-width: 885px;
+}
+
+.layer-two{
+    height: clamp(200px, 30vh, 30vh);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    min-width: 885px;
+}
+
+.layer-three{
+    height: clamp(200px, 30vh, 30vh);
+    background-color: var(--color-darker-white);
+    min-width: 885px;
+    z-index: -1;
+}
+
+.main-text{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+input{
+    width: 250px;
+    border: solid var(--default-input-color);
+    border-radius: 5px;
+    border-width: 1px;
+    height: 24px;
+}
+
+input:focus{
+    border: solid pink;
+}
+
+.error{
+    border: solid var(--bad-input-color);
+}
+
+.mini-text{
+    font-weight: 500;
+}
+
+.layer-one p{
+    padding-top: 150px;
+}
+
+.layer-three div{
+    padding-top: 35px;
+}
+
+form, .layer-one p, .layer-three div{
+    padding-left: 50px;
 }
