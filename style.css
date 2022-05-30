@@ -105,7 +105,7 @@ button{
     height: clamp(200px, 30vh, 30vh);
     background-color: var(--color-darker-white);
     min-width: 800px;
-    
+    z-index: -1;
 }
 
 .main-text{
@@ -150,14 +150,15 @@ input:focus{
     margin-top: 15vh;
 }
 
-.layer-three div{
-    margin-top: 35px;
+.mini-text{
+    margin-top: 30px;
 }
 
-form, .layer-one p, .layer-three div{
+form, .layer-one p, .layer-two div{
     margin-left: 50px;
 }
 
-.button form{
-    margin-left: 0.1px;
+form .button{
+    margin-top: 20px;
+    margin-left: .1px;
 }
