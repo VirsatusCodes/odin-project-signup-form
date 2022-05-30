@@ -40,7 +40,7 @@
                            <input type="text" name="last-name" id="user-last-name">
                        </div>
                    </div>
-
+                
                    <div class="email-phone flex">
 
                         <div class="flex box">
@@ -58,7 +58,8 @@
 
                         <div class="flex box">
                             <label for="user-password">PASSWORD</label>
-                            <input type="password" name="password" id="email" class="error">
+                            <input type="password" name="password" id="user-password" class="error">
+                            <p>* Passwords do not match</p>
                         </div>
 
                         <div class="flex box">
@@ -70,10 +71,11 @@
             </div>
             <div class="layer-three">
                 <div class="button">
-                    <button> Create Account </button>
+
+                    <form><button type="submit"> Create Account </button></form>
                 </div>
                 <div class="mini-text">
-                    <p>Already have an account?<a href="https://google.com">Log in</a></p>
+                    <p>Already have an account?<a href="https://google.com"> Log in</a></p>
                 </div>
             </div>
         </div>

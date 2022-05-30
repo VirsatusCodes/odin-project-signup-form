@@ -92,20 +92,20 @@ button{
 .layer-one{
     height: clamp(200px, 40vh, 40vh);
     background-color: var(--color-darker-white);
-    min-width: 885px;
+    min-width: 800px;
 }
 
 .layer-two{
-    height: clamp(275px, 30vh, 30vh);
+    height: clamp(300px, 30vh, 30vh);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    min-width: 885px;
+    min-width: 800px;
 }
 
 .layer-three{
     height: clamp(200px, 30vh, 30vh);
     background-color: var(--color-darker-white);
-    min-width: 885px;
-    z-index: -1;
+    min-width: 800px;
+    
 }
 
 .main-text{
@@ -128,7 +128,8 @@ input{
 }
 
 input:focus{
-    border: solid pink;
+    border: solid var(--good-input-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .error{
@@ -137,6 +138,12 @@ input:focus{
 
 .mini-text{
     font-weight: 500;
+}
+
+.passwords p{
+    font-size: 12px;
+    color: red;
+    margin-top: -1px;
 }
 
 .layer-one p{
@@ -149,4 +156,8 @@ input:focus{
 
 form, .layer-one p, .layer-three div{
     margin-left: 50px;
+}
+
+.button form{
+    margin-left: 0.1px;
 }
